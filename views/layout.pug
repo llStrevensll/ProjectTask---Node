@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="/css/normalize.css")
-        link(rel="stylesheet", href="/css/app.css")
-        title #{nombrePagina}
+        include partials/header
+        
     body
         header.barra
             h1 UpTask - Administrador de Proyectos
@@ -30,7 +26,7 @@ html(lang="en")
             //-pre= vardump(proyectos)
         
     script(src="/dist/bundle.js")
-    script(src="https://kit.fontawesome.com/9f89907163.js")
+    
     
         
     

@@ -4,7 +4,7 @@ const slug = require('slug');
 const shortid = require('shortid');
 
 //Definir modelo
-const Proyectos = db.define('proyectos', { //nombre
+const Proyectos = db.define('proyectos', { //nombre del modelo
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
