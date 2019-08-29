@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        style
+            include ./email.css
+    body
+        h2 Confirmar tu Cuenta UpTask
+        p Hola, ta casi estas inscrito, presiona el siguiente botón para confirmar.
+        p Nota: Este enlace es temporal, si vence debes volver a solicitarlo
+        a(href=`${confirmarUrl}`) Confirmar Cuenta
+        p Si no puedes acceder a este enlace, visita #{confirmarUrl}
+        p Si no solicitaste este e-mail, puedes ignorarlo 

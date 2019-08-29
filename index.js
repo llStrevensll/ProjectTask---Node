@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const flash = require('connect-flash');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+const passport = require('./config/passport');
 //const expressValidator = require('express-validator');
 
 
@@ -56,10 +57,15 @@ app.use(session({
     saveUninitialized: false // si alguien se quiere autenticar debe mantener la sesion viva
 }));
 
+//Passport
+app.use(passport.initialize());
+app.use(passport.session());
+
 //Pasar var dump a la aplicación
 app.use((req, res, next) => {
     res.locals.vardump = helpers.vardump; //res.locals.'nombrevariable'->permite crear variables que se pueden usar en los demas archivos
     res.locals.mensajes = req.flash();
+    res.locals.usuario = {...req.user } || null; //crea un copia de req.user y lo asigna - caso contrario (undifenied) sera null
     next();
 });
 

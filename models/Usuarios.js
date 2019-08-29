@@ -34,7 +34,13 @@ const Usuarios = db.define('usuarios', {
             }
         }
 
-    }
+    },
+    activo: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0 //valor por fault
+    },
+    token: Sequelize.STRING,
+    expiracion: Sequelize.DATE
 
 }, {
     hooks: {
@@ -43,6 +49,12 @@ const Usuarios = db.define('usuarios', {
         }
     }
 });
+
+//Métodos personalizados
+Usuarios.prototype.verificarPassword = function(password) {
+    return bcrypt.compareSync(password, this.password); //comparar pass-- 
+}
+
 
 Usuarios.hasMany(Proyectos); ////Cada usuario tiene muchos proyectos -> relacionara las dos tablas
 
