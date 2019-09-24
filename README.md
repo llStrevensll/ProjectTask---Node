@@ -10,4 +10,20 @@
 - Cambiar estado de las tareas
 
 
+***App***
 
+![Imagen](https://github.com/llStrevensll/ProjectTask---Node/blob/master/imagenesgit/app1.PNG)
+
+![Imagen](https://github.com/llStrevensll/ProjectTask---Node/blob/master/imagenesgit/app2.PNG)
+
+![Imagen](https://github.com/llStrevensll/ProjectTask---Node/blob/master/imagenesgit/app3.PNG)
+
+![Imagen](https://github.com/llStrevensll/ProjectTask---Node/blob/master/imagenesgit/app4.PNG)
+
+![Imagen](https://github.com/llStrevensll/ProjectTask---Node/blob/master/imagenesgit/app6.PNG)
+
+![Imagen](https://github.com/llStrevensll/ProjectTask---Node/blob/master/imagenesgit/app7.PNG)
+
+![Imagen](https://github.com/llStrevensll/ProjectTask---Node/blob/master/imagenesgit/app8.PNG)
+
+![Imagen](https://github.com/llStrevensll/ProjectTask---Node/blob/master/imagenesgit/app9.PNG)
