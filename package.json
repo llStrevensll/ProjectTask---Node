@@ -29,7 +29,7 @@
         "nodemailer": "^6.3.0",
         "passport": "^0.4.0",
         "passport-local": "^1.0.0",
-        "pug": "^2.0.4",
+        "pug": "^3.0.1",
         "sequelize": "^5.14.0",
         "shortid": "^2.2.14",
         "slug": "^1.1.0",
